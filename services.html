@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Церква ХВЄ Stříbro</title>
+  <meta name="description" content="Розклад служінь та молитовних зустрічей Церкви ХВЄ Stříbro.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: "#f6f1e8",
+            sand: "#e8dcc7",
+            gold: "#b88a44",
+            ink: "#2a2620",
+            muted: "#6f6557"
+          },
+          boxShadow: {
+            soft: "0 20px 60px rgba(42, 38, 32, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white text-ink">
+  <header class="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="flex h-11 w-11 items-center justify-center rounded-full bg-cream text-lg font-bold text-gold">ХВЄ</span>
+        <div>
+          <div class="text-sm uppercase tracking-[0.24em] text-muted">Pentecostal Church</div>
+          <div class="text-lg font-semibold">Церква ХВЄ Stříbro</div>
+        </div>
+      </a>
+      <button class="nav-toggle inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 lg:hidden" aria-label="Toggle menu">
+        <span class="nav-toggle-line"></span>
+      </button>
+      <nav class="nav-panel hidden items-center gap-6 text-sm font-medium lg:flex">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link is-active">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn is-active" data-lang-choice="uk">UA</button>
+          <button type="button" class="lang-btn" data-lang-choice="cs">CZ</button>
+        </div>
+      </nav>
+    </div>
+    <div class="nav-drawer hidden border-t border-black/5 bg-white px-4 py-4 lg:hidden">
+      <div class="flex flex-col gap-3 text-sm font-medium">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link is-active">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div class="lang-switcher mt-2">
+          <button type="button" class="lang-btn is-active" data-lang-choice="uk">UA</button>
+          <button type="button" class="lang-btn" data-lang-choice="cs">CZ</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="bg-cream/65">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
+        <p class="section-kicker" data-lang="uk">Служіння</p>
+        <p class="section-kicker hidden" data-lang="cs">Bohosluzby</p>
+        <h1 class="mt-4 max-w-3xl text-4xl font-extrabold leading-tight sm:text-5xl" data-lang="uk">Розклад богослужінь і молитовних зустрічей</h1>
+        <h1 class="hidden mt-4 max-w-3xl text-4xl font-extrabold leading-tight sm:text-5xl" data-lang="cs">Rozvrh bohosluzeb a modlitebnich setkani</h1>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <div class="grid gap-6 lg:grid-cols-2">
+        <article class="schedule-card schedule-large">
+          <p class="schedule-day">Sunday</p>
+          <h2>10:00</h2>
+          <p data-lang="uk">Основне недільне служіння: поклоніння, молитва, проповідь та спілкування після завершення.</p>
+          <p data-lang="cs" class="hidden">Hlavni nedelni bohosluzba: chvaly, modlitba, kazani a spolecny cas po skonceni.</p>
+        </article>
+        <article class="schedule-card schedule-large">
+          <p class="schedule-day">Wednesday prayer</p>
+          <h2>18:00</h2>
+          <p data-lang="uk">Молитовне зібрання серед тижня для підтримки, заступництва та духовного підкріплення.</p>
+          <p data-lang="cs" class="hidden">Modlitebni shromazdeni uprostred tydne pro podporu, prihovorni modlitbu a duchovni posilu.</p>
+        </article>
+      </div>
+
+      <div class="mt-12 grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-start">
+        <div class="space-y-5">
+          <div class="prose-block">
+            <h2 data-lang="uk">Що очікувати</h2>
+            <h2 data-lang="cs" class="hidden">Co ocekavat</h2>
+            <p data-lang="uk">Невелика, дружня атмосфера, зрозумілий порядок служіння, місце для молитви та знайомства з людьми. Сайт зроблено так, щоб майбутні зміни розкладу можна було швидко оновити вручну.</p>
+            <p data-lang="cs" class="hidden">Mensi a pratelska atmosfera, srozumitelny prubeh setkani, prostor pro modlitbu i seznameni s lidmi. Web je pripraven tak, aby slo budouci zmeny rozvrhu rychle upravit rucne.</p>
+          </div>
+          <div class="prose-block">
+            <h2 data-lang="uk">Для сімей і гостей</h2>
+            <h2 data-lang="cs" class="hidden">Pro rodiny a hosty</h2>
+            <p data-lang="uk">Нові люди завжди бажані. Якщо ви приїхали до Stříbro недавно або шукаєте церкву, сторінка контактів допоможе зв'язатися перед візитом.</p>
+            <p data-lang="cs" class="hidden">Novi lide jsou vzdy vitani. Pokud jste do Stribra prijeli nedavno nebo hledate cirkev, kontaktni stranka vam pomuze spojit se pred navstevou.</p>
+          </div>
+        </div>
+        <div class="placeholder-card">
+          <div class="placeholder-label">worship</div>
+          <div class="placeholder-content">worship music</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-black/5 bg-white">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-8 text-sm text-muted sm:px-6 md:flex-row md:items-center md:justify-between">
+      <p>© <span id="year"></span> Церква ХВЄ Stříbro</p>
+      <p data-lang="uk">Розклад легко редагується у HTML</p>
+      <p data-lang="cs" class="hidden">Rozvrh lze snadno upravit v HTML</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

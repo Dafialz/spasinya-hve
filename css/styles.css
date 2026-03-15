@@ -1,0 +1,282 @@
+:root {
+  --white: #ffffff;
+  --cream: #f6f1e8;
+  --sand: #e8dcc7;
+  --gold: #b88a44;
+  --ink: #2a2620;
+  --muted: #6f6557;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  color: var(--ink);
+  background: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-shell {
+  min-height: 100vh;
+}
+
+.section-kicker {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.nav-link {
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.is-active {
+  color: var(--ink);
+}
+
+.lang-switcher {
+  display: inline-flex;
+  gap: 0.35rem;
+  padding: 0.2rem;
+  border: 1px solid rgba(42, 38, 32, 0.08);
+  border-radius: 999px;
+  background: rgba(246, 241, 232, 0.85);
+}
+
+.lang-btn {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang-btn.is-active {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.nav-toggle-line,
+.nav-toggle-line::before,
+.nav-toggle-line::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--ink);
+  position: relative;
+  transition: all 0.2s ease;
+  content: "";
+}
+
+.nav-toggle-line::before {
+  position: absolute;
+  top: -6px;
+}
+
+.nav-toggle-line::after {
+  position: absolute;
+  top: 6px;
+}
+
+.nav-toggle.is-open .nav-toggle-line {
+  background: transparent;
+}
+
+.nav-toggle.is-open .nav-toggle-line::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-toggle.is-open .nav-toggle-line::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.placeholder-card,
+.feature-tile,
+.schedule-card,
+.contact-card {
+  border: 1px solid rgba(42, 38, 32, 0.08);
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 1.75rem;
+  box-shadow: 0 20px 60px rgba(42, 38, 32, 0.08);
+}
+
+.placeholder-card {
+  min-height: 240px;
+  padding: 1.5rem;
+  background-image:
+    linear-gradient(135deg, rgba(246, 241, 232, 0.95), rgba(232, 220, 199, 0.82)),
+    repeating-linear-gradient(45deg, rgba(184, 138, 68, 0.08) 0, rgba(184, 138, 68, 0.08) 12px, transparent 12px, transparent 24px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-card {
+  min-height: 520px;
+}
+
+.gallery-card {
+  min-height: 220px;
+}
+
+.about-card,
+.map-card {
+  min-height: 280px;
+}
+
+.placeholder-label {
+  align-self: flex-start;
+  border-radius: 999px;
+  background: rgba(42, 38, 32, 0.08);
+  padding: 0.45rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.placeholder-content {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.feature-tile {
+  padding: 1.5rem;
+}
+
+.feature-tile h3,
+.contact-card h2,
+.prose-block h2 {
+  margin: 0.75rem 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.feature-tile p,
+.schedule-card p,
+.contact-card p,
+.prose-block p {
+  margin: 0;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.feature-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+  height: 36px;
+  padding: 0 0.85rem;
+  border-radius: 999px;
+  background: var(--cream);
+  color: var(--gold);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.schedule-card {
+  padding: 1.75rem;
+}
+
+.schedule-card h3,
+.schedule-card h2 {
+  margin: 0.35rem 0 0.75rem;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.schedule-large {
+  min-height: 240px;
+}
+
+.schedule-day {
+  color: var(--gold);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.prose-block + .prose-block {
+  margin-top: 1.5rem;
+}
+
+.feature-stack {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.contact-card {
+  padding: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-top: 1rem;
+}
+
+.contact-item span {
+  color: var(--gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact-item strong {
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+@media (max-width: 1023px) {
+  .nav-drawer.is-open {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-card {
+    min-height: 360px;
+  }
+
+  .placeholder-card,
+  .feature-tile,
+  .schedule-card,
+  .contact-card {
+    border-radius: 1.4rem;
+  }
+
+  .placeholder-content {
+    font-size: 1rem;
+  }
+}

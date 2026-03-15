@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Церква ХВЄ Stříbro</title>
+  <meta name="description" content="Сучасний сайт церкви ХВЄ у Stříbro, Czech Republic. Інформація про служіння, спільноту та контакти.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: "#f6f1e8",
+            sand: "#e8dcc7",
+            gold: "#b88a44",
+            ink: "#2a2620",
+            muted: "#6f6557"
+          },
+          boxShadow: {
+            soft: "0 20px 60px rgba(42, 38, 32, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white text-ink">
+  <div class="site-shell">
+    <header class="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+        <a href="index.html" class="flex items-center gap-3">
+          <span class="flex h-11 w-11 items-center justify-center rounded-full bg-cream text-lg font-bold text-gold">ХВЄ</span>
+          <div>
+            <div class="text-sm uppercase tracking-[0.24em] text-muted">Pentecostal Church</div>
+            <div class="text-lg font-semibold">Церква ХВЄ Stříbro</div>
+          </div>
+        </a>
+        <button class="nav-toggle inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 lg:hidden" aria-label="Toggle menu">
+          <span class="nav-toggle-line"></span>
+        </button>
+        <nav class="nav-panel hidden items-center gap-6 text-sm font-medium lg:flex">
+          <a href="index.html" class="nav-link is-active">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <div class="lang-switcher">
+            <button type="button" class="lang-btn is-active" data-lang-choice="uk">UA</button>
+            <button type="button" class="lang-btn" data-lang-choice="cs">CZ</button>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-drawer hidden border-t border-black/5 bg-white px-4 py-4 lg:hidden">
+        <div class="flex flex-col gap-3 text-sm font-medium">
+          <a href="index.html" class="nav-link is-active">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <div class="lang-switcher mt-2">
+            <button type="button" class="lang-btn is-active" data-lang-choice="uk">UA</button>
+            <button type="button" class="lang-btn" data-lang-choice="cs">CZ</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(184,138,68,0.16),_transparent_34%),linear-gradient(135deg,_#fff_0%,_#f6f1e8_100%)]"></div>
+        <div class="relative mx-auto grid max-w-6xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:py-28">
+          <div class="space-y-8">
+            <div class="inline-flex items-center gap-2 rounded-full border border-gold/20 bg-white px-4 py-2 text-sm text-muted shadow-soft">
+              <span class="h-2 w-2 rounded-full bg-gold"></span>
+              <span data-lang="uk">Християнська громада у Stříbro, Чехія</span>
+              <span data-lang="cs" class="hidden">Krestanska komunita ve meste Stribro</span>
+            </div>
+            <div class="space-y-5">
+              <p class="section-kicker" data-lang="uk">Ласкаво просимо</p>
+              <p class="section-kicker hidden" data-lang="cs">Vitejte</p>
+              <h1 class="max-w-3xl text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl" data-lang="uk">
+                Церква ХВЄ Stříbro. Прості зустрічі, щира молитва, жива спільнота.
+              </h1>
+              <h1 class="hidden max-w-3xl text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl" data-lang="cs">
+                Cirkev KHB Stribro. Jednoducha setkani, uprímna modlitba a ziva komunita.
+              </h1>
+              <p class="max-w-2xl text-lg leading-8 text-muted" data-lang="uk">
+                Ми будуємо нову громаду, де кожен може знайти місце для молитви, поклоніння, дружби та духовного росту.
+              </p>
+              <p class="hidden max-w-2xl text-lg leading-8 text-muted" data-lang="cs">
+                Budujeme nove spolecenstvi, kde muze kazdy najit misto pro modlitbu, chvaly, pratelstvi a duchovni rust.
+              </p>
+            </div>
+            <div class="flex flex-col gap-4 sm:flex-row">
+              <a href="services.html" class="rounded-full bg-ink px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-gold">
+                <span data-lang="uk">Розклад служінь</span>
+                <span data-lang="cs" class="hidden">Cas bohosluzeb</span>
+              </a>
+              <a href="contact.html" class="rounded-full border border-ink/10 bg-white px-6 py-3 text-center text-sm font-semibold text-ink transition hover:border-gold hover:text-gold">
+                <span data-lang="uk">Зв'язатися</span>
+                <span data-lang="cs" class="hidden">Kontakt</span>
+              </a>
+            </div>
+            <div class="grid gap-4 rounded-[2rem] border border-black/5 bg-white/80 p-5 shadow-soft sm:grid-cols-3">
+              <div>
+                <div class="text-xs uppercase tracking-[0.2em] text-muted" data-lang="uk">Неділя</div>
+                <div class="hidden text-xs uppercase tracking-[0.2em] text-muted" data-lang="cs">Nedele</div>
+                <div class="mt-1 text-2xl font-bold">10:00</div>
+              </div>
+              <div>
+                <div class="text-xs uppercase tracking-[0.2em] text-muted" data-lang="uk">Молитва</div>
+                <div class="hidden text-xs uppercase tracking-[0.2em] text-muted" data-lang="cs">Modlitba</div>
+                <div class="mt-1 text-2xl font-bold">18:00</div>
+              </div>
+              <div>
+                <div class="text-xs uppercase tracking-[0.2em] text-muted" data-lang="uk">Середа</div>
+                <div class="hidden text-xs uppercase tracking-[0.2em] text-muted" data-lang="cs">Streda</div>
+                <div class="mt-1 text-2xl font-bold">18:00</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="placeholder-card hero-card">
+              <div class="placeholder-label" data-lang="uk">hero worship photo</div>
+              <div class="placeholder-label hidden" data-lang="cs">hero worship photo</div>
+              <div class="placeholder-content">
+                <span data-lang="uk">Місце для головного фото поклоніння</span>
+                <span data-lang="cs" class="hidden">Misto pro hlavni fotografii chval</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div class="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div class="space-y-5">
+            <p class="section-kicker" data-lang="uk">Про церкву</p>
+            <p class="section-kicker hidden" data-lang="cs">O cirkvi</p>
+            <h2 class="text-3xl font-bold sm:text-4xl" data-lang="uk">Нова громада для українців, чехів і всіх, хто шукає Божу присутність.</h2>
+            <h2 class="hidden text-3xl font-bold sm:text-4xl" data-lang="cs">Nove spolecenstvi pro Ukrajince, Cechy a vsechny, kdo hledaji Bozi pritomnost.</h2>
+            <p class="text-lg leading-8 text-muted" data-lang="uk">
+              Ми хочемо, щоб цей дім був відкритим, теплим і зрозумілим. Тут є місце для молитви, Біблії, підтримки сімей та дружньої спільності.
+            </p>
+            <p class="hidden text-lg leading-8 text-muted" data-lang="cs">
+              Chceme, aby tento domov byl otevreny, prijemny a srozumitelny. Je zde misto pro modlitbu, Bibli, podporu rodin i pratelstvi.
+            </p>
+            <a href="about.html" class="inline-flex items-center gap-2 text-sm font-semibold text-gold">
+              <span data-lang="uk">Дізнатися більше</span>
+              <span data-lang="cs" class="hidden">Zjistit vice</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div class="feature-tile">
+              <div class="feature-number">01</div>
+              <h3 data-lang="uk">Жива молитва</h3>
+              <h3 data-lang="cs" class="hidden">Ziva modlitba</h3>
+              <p data-lang="uk">Прості й щирі молитовні зустрічі протягом тижня.</p>
+              <p data-lang="cs" class="hidden">Jednoducha a uprímna modlitebni setkani behem tydne.</p>
+            </div>
+            <div class="feature-tile">
+              <div class="feature-number">02</div>
+              <h3 data-lang="uk">Поклоніння</h3>
+              <h3 data-lang="cs" class="hidden">Chvaly</h3>
+              <p data-lang="uk">Пісні, Біблія і проповідь у дружній атмосфері.</p>
+              <p data-lang="cs" class="hidden">Pisne, Bible a kazani v pratelske atmosfere.</p>
+            </div>
+            <div class="feature-tile">
+              <div class="feature-number">03</div>
+              <h3 data-lang="uk">Підтримка сімей</h3>
+              <h3 data-lang="cs" class="hidden">Podpora rodin</h3>
+              <p data-lang="uk">Ми будуємо безпечну спільноту для дорослих і дітей.</p>
+              <p data-lang="cs" class="hidden">Budujeme bezpecne spolecenstvi pro dospele i deti.</p>
+            </div>
+            <div class="feature-tile">
+              <div class="feature-number">04</div>
+              <h3 data-lang="uk">Відкрите серце</h3>
+              <h3 data-lang="cs" class="hidden">Otevrene srdce</h3>
+              <p data-lang="uk">Тут раді кожному, хто хоче прийти, послухати й побути разом.</p>
+              <p data-lang="cs" class="hidden">Kazdy je vitan, kdo chce prijit, naslouchat a byt spolu.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-cream/70">
+        <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p class="section-kicker" data-lang="uk">Час служінь</p>
+              <p class="section-kicker hidden" data-lang="cs">Cas setkani</p>
+              <h2 class="text-3xl font-bold sm:text-4xl" data-lang="uk">Простий розклад для нової громади</h2>
+              <h2 class="hidden text-3xl font-bold sm:text-4xl" data-lang="cs">Jednoduchy rozvrh pro nove spolecenstvi</h2>
+            </div>
+            <a href="services.html" class="text-sm font-semibold text-gold">
+              <span data-lang="uk">Відкрити сторінку служінь</span>
+              <span data-lang="cs" class="hidden">Otevrit stranku bohosluzeb</span>
+            </a>
+          </div>
+          <div class="mt-10 grid gap-5 md:grid-cols-2">
+            <article class="schedule-card">
+              <p class="schedule-day" data-lang="uk">Неділя</p>
+              <p class="schedule-day hidden" data-lang="cs">Nedele</p>
+              <h3>10:00</h3>
+              <p data-lang="uk">Недільне богослужіння, поклоніння, проповідь і спільність після служіння.</p>
+              <p data-lang="cs" class="hidden">Nedelni bohosluzba, chvaly, kazani a spolecenstvi po shromazdeni.</p>
+            </article>
+            <article class="schedule-card">
+              <p class="schedule-day" data-lang="uk">Середа, молитва</p>
+              <p class="schedule-day hidden" data-lang="cs">Streda, modlitba</p>
+              <h3>18:00</h3>
+              <p data-lang="uk">Молитовне служіння з біблійним словом та часом для особистих потреб.</p>
+              <p data-lang="cs" class="hidden">Modlitebni setkani s biblickym slovem a casem pro osobni potreby.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="section-kicker" data-lang="uk">Галерея</p>
+            <p class="section-kicker hidden" data-lang="cs">Galerie</p>
+            <h2 class="text-3xl font-bold sm:text-4xl" data-lang="uk">Місце для майбутніх фото церкви та спільноти</h2>
+            <h2 class="hidden text-3xl font-bold sm:text-4xl" data-lang="cs">Misto pro budouci fotografie cirkve a komunity</h2>
+          </div>
+        </div>
+        <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <div class="placeholder-card gallery-card">
+            <div class="placeholder-label">hero</div>
+            <div class="placeholder-content">hero worship photo</div>
+          </div>
+          <div class="placeholder-card gallery-card">
+            <div class="placeholder-label">community</div>
+            <div class="placeholder-content">church community</div>
+          </div>
+          <div class="placeholder-card gallery-card">
+            <div class="placeholder-label">prayer</div>
+            <div class="placeholder-content">prayer</div>
+          </div>
+          <div class="placeholder-card gallery-card">
+            <div class="placeholder-label">worship</div>
+            <div class="placeholder-content">worship music</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-4 pb-16 sm:px-6">
+        <div class="mx-auto max-w-6xl rounded-[2.25rem] bg-ink px-6 py-10 text-white shadow-soft sm:px-10 lg:flex lg:items-center lg:justify-between">
+          <div class="max-w-2xl">
+            <p class="section-kicker text-gold" data-lang="uk">Контакт</p>
+            <p class="section-kicker hidden text-gold" data-lang="cs">Kontakt</p>
+            <h2 class="mt-3 text-3xl font-bold sm:text-4xl" data-lang="uk">Хочете прийти в неділю або поставити запитання?</h2>
+            <h2 class="hidden mt-3 text-3xl font-bold sm:text-4xl" data-lang="cs">Chcete prijit v nedeli nebo se na neco zeptat?</h2>
+            <p class="mt-4 text-base leading-7 text-white/75" data-lang="uk">Сторінка контактів уже підготовлена для адреси, телефону, мапи та соціальних мереж.</p>
+            <p class="hidden mt-4 text-base leading-7 text-white/75" data-lang="cs">Kontaktni stranka je pripravena pro adresu, telefon, mapu i socialni site.</p>
+          </div>
+          <a href="contact.html" class="mt-6 inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:bg-gold hover:text-white lg:mt-0">
+            <span data-lang="uk">Перейти до контактів</span>
+            <span data-lang="cs" class="hidden">Prejit na kontakt</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-black/5 bg-white">
+      <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-8 text-sm text-muted sm:px-6 md:flex-row md:items-center md:justify-between">
+        <p>© <span id="year"></span> Церква ХВЄ Stříbro</p>
+        <p data-lang="uk">Підготовлено для локального відкриття в браузері</p>
+        <p data-lang="cs" class="hidden">Pripraveno pro lokalni otevreni v prohlizeci</p>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

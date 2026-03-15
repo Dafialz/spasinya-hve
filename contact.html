@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Церква ХВЄ Stříbro</title>
+  <meta name="description" content="Контакти Церкви ХВЄ Stříbro. Підготовлена сторінка для адреси, телефону, карти та зв'язку.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: "#f6f1e8",
+            sand: "#e8dcc7",
+            gold: "#b88a44",
+            ink: "#2a2620",
+            muted: "#6f6557"
+          },
+          boxShadow: {
+            soft: "0 20px 60px rgba(42, 38, 32, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white text-ink">
+  <header class="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="flex h-11 w-11 items-center justify-center rounded-full bg-cream text-lg font-bold text-gold">ХВЄ</span>
+        <div>
+          <div class="text-sm uppercase tracking-[0.24em] text-muted">Pentecostal Church</div>
+          <div class="text-lg font-semibold">Церква ХВЄ Stříbro</div>
+        </div>
+      </a>
+      <button class="nav-toggle inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 lg:hidden" aria-label="Toggle menu">
+        <span class="nav-toggle-line"></span>
+      </button>
+      <nav class="nav-panel hidden items-center gap-6 text-sm font-medium lg:flex">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link is-active">Contact</a>
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn is-active" data-lang-choice="uk">UA</button>
+          <button type="button" class="lang-btn" data-lang-choice="cs">CZ</button>
+        </div>
+      </nav>
+    </div>
+    <div class="nav-drawer hidden border-t border-black/5 bg-white px-4 py-4 lg:hidden">
+      <div class="flex flex-col gap-3 text-sm font-medium">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link is-active">Contact</a>
+        <div class="lang-switcher mt-2">
+          <button type="button" class="lang-btn is-active" data-lang-choice="uk">UA</button>
+          <button type="button" class="lang-btn" data-lang-choice="cs">CZ</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="bg-cream/65">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
+        <p class="section-kicker" data-lang="uk">Контакти</p>
+        <p class="section-kicker hidden" data-lang="cs">Kontakt</p>
+        <h1 class="mt-4 max-w-3xl text-4xl font-extrabold leading-tight sm:text-5xl" data-lang="uk">Сторінка готова для контактної інформації, адреси та карти.</h1>
+        <h1 class="hidden mt-4 max-w-3xl text-4xl font-extrabold leading-tight sm:text-5xl" data-lang="cs">Stranka je pripravena pro kontaktni udaje, adresu a mapu.</h1>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+      <div class="grid gap-6 lg:grid-cols-[1fr_0.95fr]">
+        <div class="space-y-6">
+          <div class="contact-card">
+            <h2 data-lang="uk">Основна інформація</h2>
+            <h2 data-lang="cs" class="hidden">Zakladni informace</h2>
+            <div class="contact-item">
+              <span data-lang="uk">Церква</span>
+              <span data-lang="cs" class="hidden">Cirkev</span>
+              <strong>Церква ХВЄ Stříbro</strong>
+            </div>
+            <div class="contact-item">
+              <span data-lang="uk">Місто</span>
+              <span data-lang="cs" class="hidden">Mesto</span>
+              <strong>Stříbro, Czech Republic</strong>
+            </div>
+            <div class="contact-item">
+              <span data-lang="uk">Розклад</span>
+              <span data-lang="cs" class="hidden">Rozvrh</span>
+              <strong>Sunday 10:00 / Wednesday prayer 18:00</strong>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h2 data-lang="uk">Місце для оновлення</h2>
+            <h2 data-lang="cs" class="hidden">Misto pro doplneni</h2>
+            <p data-lang="uk">Додайте тут точну адресу, номер телефону, email, Telegram або Facebook, коли вони будуть готові.</p>
+            <p data-lang="cs" class="hidden">Sem lze doplnit presnou adresu, telefon, email, Telegram nebo Facebook, az budou pripraveny.</p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="placeholder-card map-card">
+            <div class="placeholder-label">map</div>
+            <div class="placeholder-content" data-lang="uk">Місце для карти або фото будівлі</div>
+            <div class="placeholder-content hidden" data-lang="cs">Misto pro mapu nebo fotografii budovy</div>
+          </div>
+          <div class="placeholder-card">
+            <div class="placeholder-label">prayer</div>
+            <div class="placeholder-content">prayer</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-black/5 bg-white">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-8 text-sm text-muted sm:px-6 md:flex-row md:items-center md:justify-between">
+      <p>© <span id="year"></span> Церква ХВЄ Stříbro</p>
+      <p data-lang="uk">Оновіть контакти прямо у файлі contact.html</p>
+      <p data-lang="cs" class="hidden">Kontakty upravte primo v souboru contact.html</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
