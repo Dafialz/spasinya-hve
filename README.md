@@ -1,6 +1,6 @@
-# Церква ХВЄ Stříbro
+# Церква ХВЄ Plzeň
 
-Simple static website for a Pentecostal church in Stříbro, Czech Republic.
+Simple static website for a Pentecostal church in Plzeň, Czech Republic.
 
 ## Structure
 
