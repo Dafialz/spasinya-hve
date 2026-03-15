@@ -1,4 +1,4 @@
-# Церква ХВЄ Plzeň
+# Церква ХВЄ "Спасіння"
 
 Simple static website for a Pentecostal church in Plzeň, Czech Republic.
 

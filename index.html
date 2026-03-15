@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Церква ХВЄ Plzeň</title>
-  <meta name="description" content="Сучасний сайт церкви ХВЄ у Plzeň, Czech Republic. Інформація про служіння, спільноту та контакти.">
+  <title>Церква ХВЄ Спасіння | Українська християнська церква у Plzeň</title>
+  <meta name="description" content="Українська християнська церква ХВЄ Спасіння у Plzeň, Чехія. Богослужіння українською мовою. Запрошуємо українців та чехів на служіння.">
+  <meta name="keywords" content="українська церква Plzeň, українська церква Чехія, ХВЄ Plzeň, християнська церква Plzeň, українці Plzeň церква, ukrajinská církev Plzeň, křesťanská církev Plzeň, letniční církev Plzeň, církev Plzeň ukrajinci, Ukrainian church Plzen, Pentecostal church Plzen">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Церква ХВЄ Спасіння | Українська християнська церква у Plzeň">
+  <meta property="og:description" content="Українська християнська церква ХВЄ Спасіння у Plzeň, Чехія. Богослужіння українською мовою. Запрошуємо українців та чехів на служіння.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:locale:alternate" content="cs_CZ">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -28,6 +35,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Church",
+      "name": "Церква ХВЄ Спасіння",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Plzeň",
+        "addressCountry": "Czech Republic"
+      },
+      "areaServed": [
+        "Plzeň",
+        "Czech Republic"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/spasinnya_plzen/"
+      ]
+    }
+  </script>
 </head>
 <body class="bg-white text-ink">
   <div class="site-shell">
@@ -37,7 +63,7 @@
           <span class="flex h-11 w-11 items-center justify-center rounded-full bg-cream text-lg font-bold text-gold">ХВЄ</span>
           <div>
             <div class="text-sm uppercase tracking-[0.24em] text-muted">Pentecostal Church</div>
-            <div class="text-lg font-semibold">Церква ХВЄ Plzeň</div>
+            <div class="text-lg font-semibold">Церква ХВЄ "Спасіння"</div>
           </div>
         </a>
         <button class="nav-toggle inline-flex h-11 w-11 items-center justify-center rounded-full border border-black/10 lg:hidden" aria-label="Toggle menu">
@@ -48,6 +74,11 @@
           <a href="about.html" class="nav-link">About</a>
           <a href="services.html" class="nav-link">Services</a>
           <a href="contact.html" class="nav-link">Contact</a>
+          <a href="https://www.instagram.com/spasinnya_plzen/" class="social-icon-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-current">
+              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5Zm8.88 2.12a1.12 1.12 0 1 1 0 2.26 1.12 1.12 0 0 1 0-2.26ZM12 6.5A5.5 5.5 0 1 1 6.5 12 5.51 5.51 0 0 1 12 6.5Zm0 1.5A4 4 0 1 0 16 12a4 4 0 0 0-4-4Z"/>
+            </svg>
+          </a>
           <div class="lang-switcher">
             <button type="button" class="lang-btn is-active" data-lang-choice="uk">UA</button>
             <button type="button" class="lang-btn" data-lang-choice="cs">CZ</button>
@@ -60,6 +91,9 @@
           <a href="about.html" class="nav-link">About</a>
           <a href="services.html" class="nav-link">Services</a>
           <a href="contact.html" class="nav-link">Contact</a>
+          <a href="https://www.instagram.com/spasinnya_plzen/" class="social-icon-link" target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a>
           <div class="lang-switcher mt-2">
             <button type="button" class="lang-btn is-active" data-lang-choice="uk">UA</button>
             <button type="button" class="lang-btn" data-lang-choice="cs">CZ</button>
@@ -75,17 +109,17 @@
           <div class="space-y-8">
             <div class="inline-flex items-center gap-2 rounded-full border border-gold/20 bg-white px-4 py-2 text-sm text-muted shadow-soft">
               <span class="h-2 w-2 rounded-full bg-gold"></span>
-              <span data-lang="uk">Християнська громада у Plzeň, Чехія</span>
-              <span data-lang="cs" class="hidden">Krestanska komunita ve meste Plzen</span>
+              <span data-lang="uk">Українська християнська церква у Plzeň</span>
+              <span data-lang="cs" class="hidden">Ukrajinská křesťanská církev v Plzni</span>
             </div>
             <div class="space-y-5">
               <p class="section-kicker" data-lang="uk">Ласкаво просимо</p>
               <p class="section-kicker hidden" data-lang="cs">Vitejte</p>
               <h1 class="max-w-3xl text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl" data-lang="uk">
-                Церква ХВЄ Plzeň. Прості зустрічі, щира молитва, жива спільнота.
+                Церква ХВЄ "Спасіння". Прості зустрічі, щира молитва, жива спільнота.
               </h1>
               <h1 class="hidden max-w-3xl text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl" data-lang="cs">
-                Cirkev KHB Plzen. Jednoducha setkani, uprímna modlitba a ziva komunita.
+                Cirkev KHB Spasinnya. Jednoducha setkani, uprímna modlitba a ziva komunita.
               </h1>
               <p class="max-w-2xl text-lg leading-8 text-muted" data-lang="uk">
                 Ми будуємо нову громаду, де кожен може знайти місце для молитви, поклоніння, дружби та духовного росту.
@@ -103,6 +137,11 @@
                 <span data-lang="uk">Зв'язатися</span>
                 <span data-lang="cs" class="hidden">Kontakt</span>
               </a>
+            </div>
+            <div class="rounded-[1.5rem] border border-gold/20 bg-white/80 p-5 shadow-soft">
+              <p class="text-sm font-semibold uppercase tracking-[0.18em] text-gold">SEO</p>
+              <p class="mt-3 text-base font-semibold text-ink">Українська християнська церква у Plzeň</p>
+              <p class="mt-2 text-base font-semibold text-ink">Ukrajinská křesťanská církev v Plzni</p>
             </div>
             <div class="grid gap-4 rounded-[2rem] border border-black/5 bg-white/80 p-5 shadow-soft sm:grid-cols-3">
               <div>
@@ -249,6 +288,24 @@
         </div>
       </section>
 
+      <section class="bg-cream/70">
+        <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <div class="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+            <div class="max-w-2xl">
+              <p class="section-kicker">Instagram</p>
+              <h2 class="mt-3 text-3xl font-bold sm:text-4xl" data-lang="uk">Наш Instagram</h2>
+              <h2 class="hidden mt-3 text-3xl font-bold sm:text-4xl" data-lang="cs">Náš Instagram</h2>
+              <p class="mt-4 text-lg leading-8 text-muted" data-lang="uk">Слідкуйте за новинами громади, анонсами служінь і новими фото церковного життя в Plzeň.</p>
+              <p class="hidden mt-4 text-lg leading-8 text-muted" data-lang="cs">Sledujte novinky sboru, oznámení bohoslužeb a nové fotografie ze života církve v Plzni.</p>
+            </div>
+            <a href="https://www.instagram.com/spasinnya_plzen/" target="_blank" rel="noopener noreferrer" class="rounded-full bg-ink px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-gold">
+              <span data-lang="uk">Відкрити Instagram</span>
+              <span data-lang="cs" class="hidden">Otevřít Instagram</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section class="px-4 pb-16 sm:px-6">
         <div class="mx-auto max-w-6xl rounded-[2.25rem] bg-ink px-6 py-10 text-white shadow-soft sm:px-10 lg:flex lg:items-center lg:justify-between">
           <div class="max-w-2xl">
@@ -269,7 +326,7 @@
 
     <footer class="border-t border-black/5 bg-white">
       <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-8 text-sm text-muted sm:px-6 md:flex-row md:items-center md:justify-between">
-        <p>© <span id="year"></span> Церква ХВЄ Plzeň</p>
+        <p>© <span id="year"></span> Церква ХВЄ "Спасіння"</p>
         <p data-lang="uk">Підготовлено для локального відкриття в браузері</p>
         <p data-lang="cs" class="hidden">Pripraveno pro lokalni otevreni v prohlizeci</p>
       </div>
