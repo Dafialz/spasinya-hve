@@ -1,6 +1,6 @@
 # Церква ХВЄ "Спасіння"
 
-Simple static website for a Pentecostal church in Plzeň, Czech Republic.
+Static website for the church in Plzeň, Czech Republic.
 
 ## Structure
 
@@ -21,10 +21,9 @@ Simple static website for a Pentecostal church in Plzeň, Czech Republic.
 - No build step and no package installation are required.
 - The design is mobile friendly and uses TailwindCSS from CDN plus local CSS.
 - The site contains only Ukrainian content.
-- Placeholder blocks are included where future photos or a map can be inserted.
 
 ## Updating content
 
 - Edit page text directly in the HTML files.
-- Replace placeholder blocks with real `<img>` tags when photos are available.
+- Update image sections with real photos when they are available.
 - Update contact details in `contact.html`.
