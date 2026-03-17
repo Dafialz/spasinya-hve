@@ -20,7 +20,7 @@ Simple static website for a Pentecostal church in Plzeň, Czech Republic.
 - Open `index.html` directly in a browser.
 - No build step and no package installation are required.
 - The design is mobile friendly and uses TailwindCSS from CDN plus local CSS.
-- Ukrainian and Czech content structure is prepared through the language toggle in the header.
+- The site contains only Ukrainian content.
 - Placeholder blocks are included where future photos or a map can be inserted.
 
 ## Updating content
