@@ -39,6 +39,20 @@ a {
   color: var(--gold);
 }
 
+.site-logo {
+  display: block;
+  width: 3.25rem;
+  height: 3.25rem;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  object-fit: contain;
+  box-shadow: 0 8px 24px rgba(42, 38, 32, 0.12);
+}
+
+.site-logo-text {
+  min-width: 0;
+}
+
 .nav-link {
   color: var(--muted);
   transition: color 0.2s ease;
@@ -502,6 +516,20 @@ a {
 }
 
 @media (max-width: 767px) {
+  .site-logo {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  .site-logo-text .text-sm {
+    font-size: 0.68rem;
+  }
+
+  .site-logo-text .text-lg {
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+
   .hero-card {
     min-height: 360px;
   }
