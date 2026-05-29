@@ -109,15 +109,22 @@
               <p class="max-w-2xl text-2xl font-semibold leading-9 text-ink sm:text-3xl sm:leading-10">
                 Місце, де тебе приймуть таким, як ти є
               </p>
-              <div class="grid max-w-xl gap-4 rounded-[1.75rem] border border-gold/20 bg-white/85 p-5 shadow-soft sm:grid-cols-2">
-                <div>
-                  <div class="text-xs uppercase tracking-[0.2em] text-muted">Неділя</div>
-                  <div class="mt-1 text-2xl font-bold">14:00</div>
-                </div>
-                <div>
-                  <div class="text-xs uppercase tracking-[0.2em] text-muted">Субота</div>
-                  <div class="mt-1 text-2xl font-bold">18:00</div>
-                </div>
+              <div class="hero-schedule">
+                <article class="hero-schedule-card">
+                  <p class="hero-schedule-title">Недільне служіння</p>
+                  <p class="hero-schedule-day">Неділя</p>
+                  <p class="hero-schedule-time">14:00</p>
+                </article>
+                <article class="hero-schedule-card">
+                  <p class="hero-schedule-title">Молитовне служіння</p>
+                  <p class="hero-schedule-day">Субота</p>
+                  <p class="hero-schedule-time">18:00</p>
+                </article>
+                <article class="hero-schedule-card">
+                  <p class="hero-schedule-title">Молодіжне служіння</p>
+                  <p class="hero-schedule-day">Понеділок</p>
+                  <p class="hero-schedule-time">19:00</p>
+                </article>
               </div>
               <p class="max-w-2xl text-base leading-8 text-muted">
                 Ми раді кожному. Приходь цієї неділі.
@@ -138,12 +145,13 @@
             </div>
           </div>
           <div>
-            <div class="placeholder-card hero-card">
-              <div class="placeholder-label">Спільна молитва</div>
-              <div class="placeholder-content">
-                <span>Тут народжується спільність, де люди знаходять віру, надію та підтримку.</span>
-              </div>
-            </div>
+            <figure class="photo-card hero-card">
+              <img src="/images/church/hero-worship.jpg" alt="Музичне служіння церкви ХВЄ Спасіння у Plzeň">
+              <figcaption>
+                <span>Спільна молитва</span>
+                <strong>Поклоніння, молитва і жива присутність громади.</strong>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -177,12 +185,13 @@
               <span>Написати нам</span>
             </a>
           </div>
-          <div class="placeholder-card">
-            <div class="placeholder-label">Перший візит</div>
-            <div class="placeholder-content">
-              <span>Ти можеш прийти без поспіху, спокійно озирнутися, послухати служіння і познайомитися з людьми у своєму темпі.</span>
-            </div>
-          </div>
+          <figure class="photo-card">
+            <img src="/images/church/first-visit.jpg" alt="Гості та громада під час служіння у Plzeň">
+            <figcaption>
+              <span>Перший візит</span>
+              <strong>Можна прийти, озирнутися і знайомитися у своєму темпі.</strong>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -235,16 +244,24 @@
               <span>Відкрити сторінку служінь</span>
             </a>
           </div>
-          <div class="mt-10 grid gap-5 md:grid-cols-2">
+          <div class="mt-10 grid gap-5 md:grid-cols-3">
             <article class="schedule-card">
+              <p class="schedule-title">Недільне служіння</p>
               <p class="schedule-day">Неділя</p>
               <h3>14:00</h3>
               <p>Недільне богослужіння, поклоніння, проповідь і спільність після служіння.</p>
             </article>
             <article class="schedule-card">
+              <p class="schedule-title">Молитовне служіння</p>
               <p class="schedule-day">Субота</p>
               <h3>18:00</h3>
               <p>Вечірнє зібрання для молитви, біблійного слова та спільності церкви.</p>
+            </article>
+            <article class="schedule-card">
+              <p class="schedule-title">Молодіжне служіння</p>
+              <p class="schedule-day">Понеділок</p>
+              <h3>19:00</h3>
+              <p>Зустріч молоді для спілкування, молитви, біблійного слова та підтримки одне одного.</p>
             </article>
           </div>
         </div>
@@ -254,26 +271,38 @@
         <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p class="section-kicker">Галерея</p>
-            <h2 class="text-3xl font-bold sm:text-4xl">Місце для майбутніх фото церкви та спільноти</h2>
+            <h2 class="text-3xl font-bold sm:text-4xl">Живі моменти церкви та спільноти</h2>
           </div>
         </div>
         <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          <div class="placeholder-card gallery-card">
-            <div class="placeholder-label">Поклоніння</div>
-            <div class="placeholder-content">Щирі служіння в атмосфері миру та єдності.</div>
-          </div>
-          <div class="placeholder-card gallery-card">
-            <div class="placeholder-label">Спільність</div>
-            <div class="placeholder-content">Люди, які підтримують одне одного в молитві та житті.</div>
-          </div>
-          <div class="placeholder-card gallery-card">
-            <div class="placeholder-label">Молитва</div>
-            <div class="placeholder-content">Час, коли серце зосереджується на Божій присутності.</div>
-          </div>
-          <div class="placeholder-card gallery-card">
-            <div class="placeholder-label">Радість</div>
-            <div class="placeholder-content">Моменти тепла, знайомства та церковної родини.</div>
-          </div>
+          <figure class="photo-card gallery-card">
+            <img src="/images/church/gallery-worship.jpg" alt="Поклоніння під час служіння церкви">
+            <figcaption>
+              <span>Поклоніння</span>
+              <strong>Щирі служіння в атмосфері миру та єдності.</strong>
+            </figcaption>
+          </figure>
+          <figure class="photo-card gallery-card">
+            <img src="/images/church/gallery-community.jpg" alt="Спільність людей після служіння">
+            <figcaption>
+              <span>Спільність</span>
+              <strong>Люди, які підтримують одне одного в молитві та житті.</strong>
+            </figcaption>
+          </figure>
+          <figure class="photo-card gallery-card">
+            <img src="/images/church/gallery-prayer.jpg" alt="Молитовний момент у залі церкви">
+            <figcaption>
+              <span>Молитва</span>
+              <strong>Час, коли серце зосереджується на Божій присутності.</strong>
+            </figcaption>
+          </figure>
+          <figure class="photo-card gallery-card">
+            <img src="/images/church/gallery-joy.jpg" alt="Молодь церкви усміхається після служіння">
+            <figcaption>
+              <span>Радість</span>
+              <strong>Моменти тепла, знайомства та церковної родини.</strong>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -323,6 +352,7 @@
             <ul class="footer-list">
               <li>Неділя — 14:00</li>
               <li>Субота — 18:00</li>
+              <li>Понеділок — 19:00</li>
             </ul>
           </div>
           <div class="footer-column">
