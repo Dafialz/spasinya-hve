@@ -3,14 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Церква ХВЄ Спасіння | Українська християнська церква у Plzeň</title>
-  <meta name="description" content="Українська християнська церква ХВЄ Спасіння у Plzeň, Чехія. Богослужіння українською мовою. Запрошуємо українців на служіння.">
-  <meta name="keywords" content="українська церква Plzeň, українська церква Чехія, ХВЄ Plzeň, християнська церква Plzeň, українці Plzeň церква, Ukrainian church Plzen, Pentecostal church Plzen">
+  <title>Церква ХВЄ "Спасіння" у Plzeň | Українська християнська церква</title>
+  <meta name="description" content="Українська церква ХВЄ &quot;Спасіння&quot; у Plzeň (Плзень): служіння, молитва, розклад і тепле запрошення для нових людей та українців у Чехії.">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Церква ХВЄ Спасіння | Українська християнська церква у Plzeň">
-  <meta property="og:description" content="Українська християнська церква ХВЄ Спасіння у Plzeň, Чехія. Богослужіння українською мовою. Запрошуємо українців на служіння.">
+  <link rel="canonical" href="https://spasinya-hve.netlify.app/">
+  <meta property="og:title" content="Церква ХВЄ &quot;Спасіння&quot; у Plzeň | Українська християнська церква">
+  <meta property="og:description" content="Українська церква ХВЄ &quot;Спасіння&quot; у Plzeň (Плзень): служіння українською мовою, розклад зустрічей і запрошення для нових людей.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://spasinya-hve.netlify.app/">
+  <meta property="og:site_name" content="Церква ХВЄ &quot;Спасіння&quot;">
   <meta property="og:locale" content="uk_UA">
+  <meta property="og:image" content="https://spasinya-hve.netlify.app/images/brand/church-logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Церква ХВЄ &quot;Спасіння&quot; у Plzeň">
+  <meta name="twitter:description" content="Українська християнська церква у Плзені. Розклад служінь, молитва, молодь і спільність для українців у Чехії.">
+  <meta name="twitter:image" content="https://spasinya-hve.netlify.app/images/brand/church-logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -41,19 +48,59 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Church",
-      "name": "Церква ХВЄ Спасіння",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Plzeň",
-        "addressCountry": "Czech Republic"
-      },
-      "areaServed": [
-        "Plzeň",
-        "Czech Republic"
-      ],
-      "sameAs": [
-        "https://www.instagram.com/spasinnya_plzen/"
+      "@graph": [
+        {
+          "@type": ["Church", "LocalBusiness", "Organization"],
+          "@id": "https://spasinya-hve.netlify.app/#church",
+          "name": "Церква ХВЄ \"Спасіння\"",
+          "alternateName": "Ukrainian Pentecostal Church Spasinya Plzeň",
+          "url": "https://spasinya-hve.netlify.app",
+          "logo": "https://spasinya-hve.netlify.app/images/brand/church-logo.png",
+          "image": "https://spasinya-hve.netlify.app/images/church/hero-worship.jpg",
+          "inLanguage": "uk",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Plzeň",
+            "addressCountry": "Czech Republic"
+          },
+          "areaServed": [
+            "Plzeň",
+            "Czech Republic"
+          ],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Sunday",
+              "opens": "14:00",
+              "closes": "16:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Saturday",
+              "opens": "18:00",
+              "closes": "20:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Monday",
+              "opens": "19:00",
+              "closes": "21:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.instagram.com/spasinnya_plzen/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://spasinya-hve.netlify.app/#website",
+          "url": "https://spasinya-hve.netlify.app",
+          "name": "Церква ХВЄ \"Спасіння\" у Plzeň",
+          "inLanguage": "uk",
+          "publisher": {
+            "@id": "https://spasinya-hve.netlify.app/#church"
+          }
+        }
       ]
     }
   </script>
@@ -62,8 +109,8 @@
   <div class="site-shell">
     <header class="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur">
       <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
-        <a href="index.html" class="flex items-center gap-3">
-          <img class="site-logo" src="/images/brand/church-logo.png" alt="Spasinnya Plzen logo">
+        <a href="index.html" class="flex items-center gap-3" aria-label="На головну сторінку церкви ХВЄ Спасіння">
+          <img class="site-logo" src="/images/brand/church-logo.png" alt="Логотип церкви ХВЄ Спасіння у Plzeň">
           <div class="site-logo-text">
             <div class="text-sm uppercase tracking-[0.24em] text-muted">Pentecostal Church</div>
             <div class="text-lg font-semibold">Церква ХВЄ "Спасіння"</div>
@@ -90,7 +137,7 @@
           <a href="about.html" class="nav-link">Про нас</a>
           <a href="services.html" class="nav-link">Служіння</a>
           <a href="contact.html" class="nav-link">Контакти</a>
-          <a href="https://www.instagram.com/spasinnya_plzen/" class="social-icon-link" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/spasinnya_plzen/" class="social-icon-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram церкви ХВЄ Спасіння">
             Інстаграм
           </a>
         </div>
@@ -150,7 +197,7 @@
           </div>
           <div>
             <figure class="photo-card hero-card">
-              <img src="/images/church/hero-worship.jpg" alt="Музичне служіння церкви ХВЄ Спасіння у Plzeň">
+              <img src="/images/church/hero-worship.jpg" alt="Недільне служіння української церкви ХВЄ Спасіння у Plzeň">
               <figcaption>
                 <span>Спільна молитва</span>
                 <strong>Поклоніння, молитва і жива присутність громади.</strong>
@@ -190,7 +237,7 @@
             </a>
           </div>
           <figure class="photo-card">
-            <img src="/images/church/first-visit.jpg" alt="Гості та громада під час служіння у Plzeň">
+            <img src="/images/church/first-visit.jpg" alt="Гості на богослужінні української християнської церкви у Плзені">
             <figcaption>
               <span>Перший візит</span>
               <strong>Можна прийти, озирнутися і знайомитися у своєму темпі.</strong>
@@ -205,7 +252,7 @@
             <p class="section-kicker">Про церкву</p>
             <h2 class="text-3xl font-bold sm:text-4xl">Нова громада для українців і всіх, хто шукає Божу присутність.</h2>
             <p class="text-lg leading-8 text-muted">
-              Ми хочемо, щоб цей дім був відкритим, теплим і зрозумілим. Тут є місце для молитви, Біблії, підтримки сімей та дружньої спільності.
+              Ми — українська християнська церква ХВЄ "Спасіння" у місті Plzeň (Плзень). Запрошуємо українців, сім'ї, молодь і всіх, хто шукає Бога, спільноту та підтримку в Чехії.
             </p>
             <a href="about.html" class="inline-flex items-center gap-2 text-sm font-semibold text-gold">
               <span>Дізнатися більше</span>
@@ -280,28 +327,28 @@
         </div>
         <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           <figure class="photo-card gallery-card">
-            <img src="/images/church/gallery-worship.jpg" alt="Поклоніння під час служіння церкви">
+            <img src="/images/church/gallery-worship.jpg" alt="Поклоніння під час служіння української церкви ХВЄ Спасіння у Plzeň">
             <figcaption>
               <span>Поклоніння</span>
               <strong>Щирі служіння в атмосфері миру та єдності.</strong>
             </figcaption>
           </figure>
           <figure class="photo-card gallery-card">
-            <img src="/images/church/gallery-community.jpg" alt="Спільність людей після служіння">
+            <img src="/images/church/gallery-community.jpg" alt="Громада української церкви у Plzeň після служіння">
             <figcaption>
               <span>Спільність</span>
               <strong>Люди, які підтримують одне одного в молитві та житті.</strong>
             </figcaption>
           </figure>
           <figure class="photo-card gallery-card">
-            <img src="/images/church/gallery-prayer.jpg" alt="Молитовний момент у залі церкви">
+            <img src="/images/church/gallery-prayer.jpg" alt="Молитва в українській християнській церкві у Плзені">
             <figcaption>
               <span>Молитва</span>
               <strong>Час, коли серце зосереджується на Божій присутності.</strong>
             </figcaption>
           </figure>
           <figure class="photo-card gallery-card">
-            <img src="/images/church/gallery-joy.jpg" alt="Молодь церкви усміхається після служіння">
+            <img src="/images/church/gallery-joy.jpg" alt="Молодіжне служіння церкви ХВЄ Спасіння">
             <figcaption>
               <span>Радість</span>
               <strong>Моменти тепла, знайомства та церковної родини.</strong>
